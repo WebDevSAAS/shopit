@@ -348,6 +348,90 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
+/*---------------------------------------------------------SURAJ__________-------_______________-------------------------------------------------*/
+.choices-sc1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 15px;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+.frm{
+  display: flex;
+  flex-wrap: wrap;
+}
+.choices-sc1a{
+  flex-grow: 3;
+}
+.form-control.me-2{
+  margin-bottom: 5px;
+  margin-top:10px;
+}
+.btn-outline-success{
+  margin-left: 30px;
+  margin-top: 10px;
+}
+/* .choices-sc1b{
+  flex-grow: 2;
+}  */
+.choices-sc2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 15px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.choices-sc3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 0px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.card{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 15px;
+  margin-bottom:15px;
+  transition: 0.7s;
+  border-color: #006622;
+}
+.card:hover{
+  transform:scale(1.1);
+  z-index:1.5;
+  box-shadow: #006622;
+}
+.card-body{
+  padding: 8px;
+}
+.item-header{
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.itmdiv{
+  display:inline-flex;
+  flex-wrap: wrap;
+}
+.signuphfix{
+  margin-top: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#register-form.register-form{
+  margin-top:30px;
+}
+.choices-sagun{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
 
 /*--------------------------------------------------------------
 # Hero Section

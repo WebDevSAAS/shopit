@@ -41,6 +41,7 @@
 <body>
 
     <!-- ======= Header ======= -->
+
     <header id="header" class="fixed-top d-flex align-items-center">
         <div class="container d-flex align-items-center justify-content-between">
 
@@ -48,17 +49,16 @@
 
             <nav id="navbar" class="navbar">
                 <ul>
+            
                     <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
                     <li><a class="nav-link scrollto" href="about.html">About</a></li>
-                    <li><a class="nav-link scrollto" href="#services">Search</a></li>
+                    <li><a class="nav-link scrollto" href="choices.html">Search</a></li>
                     <li><a class="nav-link scrollto " href="item.html">Item</a></li>
-                    <li><a class="nav-link scrollto" href="#team">Register</a></li>
-                    <li><a href="login.html">login/sign-up</a></li>
+                    <li><a class="nav-link scrollto" href="retailerregistration.html">Register</a></li>
                     <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="#">Drop Down 1</a></li>
-                            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i
-                                        class="bi bi-chevron-right"></i></a>
+                            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
                                 <ul>
                                     <li><a href="#">Deep Drop Down 1</a></li>
                                     <li><a href="#">Deep Drop Down 2</a></li>
@@ -73,7 +73,8 @@
                         </ul>
                     </li>
                     <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
-                    <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+                    <li><a href="login.html">login/sign-up</a></li>
+                    <li><a class="getstarted scrollto" href="index.html">Get Started</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
@@ -82,230 +83,161 @@
     </header><!-- End Header -->
 
     <!-- start item left -->
-    <div class="shopping-cart1">
-        <!-- Title -->
-        <div class="title">
-            Most sold items
-        </div>
-        <!-- Product #1 -->
-        <div class="item-header">
-            <div class="buttons">
-                <span class="like-btn"></span>
-            </div>
+<div class ="padding_body_item">
+    <h1>Shopping Cart</h1>
     
-            <div class="image">
-                <img src="/assets/images/item-1.png" alt="" />
-            </div>
+    <div class="shopping-cart">
     
-            <div class="description">
-                <span>Puma shoes</span>
-            </div>
-
-            <div class="quantity">
-                <button class="plus-btn" type="button" name="button">
-                    <img src="/assets/images/plus.svg" alt="" />
-                </button>
-                <input type="text" name="name" value="1">
-                <button class="minus-btn" type="button" name="button">
-                    <img src="/assets/images/minus.svg" alt="" />
-                </button>
-            </div>
-    
-            <div class="total-price">₹549</div>
+        <div class="column-labels">
+            <label class="product-image">Image</label>
+            <label class="product-details">Product</label>
+            <label class="product-price">Price</label>
+            <label class="product-quantity">Quantity</label>
+            <label class="product-removal">Remove</label>
+            <label class="product-line-price">Total</label>
         </div>
     
-        <!-- Product #2 -->
-        <div class="item-header">
-            <div class="buttons">
-                <span class="delete-btn"></span>
-                <span class="like-btn"></span>
+        <div class="product">
+            <div class="product-image">
+                <img src="https://s.cdpn.io/3/dingo-dog-bones.jpg">
             </div>
-    
-            <div class="image">
-                <img src="/assets/images/item-2.png" alt="" />
+            <div class="product-details">
+                <div class="product-title">Dingo Dog Bones</div>
+                <p class="product-description">The best dog bones of all time. Holy crap. Your dog will be begging for these
+                    things! I got curious once and ate one myself. I'm a fan.</p>
             </div>
-    
-            <div class="description">
-                <span>Addidas shoes</span>
+            <div class="product-price">12.99</div>
+            <div class="product-quantity">
+                <input type="number" value="2" min="1">
             </div>
-    
-            <div class="quantity">
-                <button class="plus-btn" type="button" name="button">
-                    <img src="/assets/images/plus.svg" alt="" />
-                </button>
-                <input type="text" name="name" value="1">
-                <button class="minus-btn" type="button" name="button">
-                    <img src="/assets/images/minus.svg" alt="" />
+            <div class="product-removal">
+                <button class="remove-product">
+                    Remove
                 </button>
             </div>
-    
-            <div class="total-price">₹999</div>
+            <div class="product-line-price">25.98</div>
         </div>
     
-        <!-- Product #3 -->
-        <div class="item-header">
-            <div class="buttons">
-                <span class="delete-btn"></span>
-                <span class="like-btn"></span>
+        <div class="product">
+            <div class="product-image">
+                <img src="https://s.cdpn.io/3/large-NutroNaturalChoiceAdultLambMealandRiceDryDogFood.png">
             </div>
-    
-            <div class="image">
-                <img src="/assets/images/item-3.png" alt="" />
+            <div class="product-details">
+                <div class="product-title">Nutro™ Adult Lamb and Rice Dog Food</div>
+                <p class="product-description">Who doesn't like lamb and rice? We've all hit the halal cart at 3am while
+                    quasi-blackout after a night of binge drinking in Manhattan. Now it's your dog's turn!</p>
             </div>
-    
-            <div class="description">
-                <span>Red Chief shoes</span>
+            <div class="product-price">45.99</div>
+            <div class="product-quantity">
+                <input type="number" value="1" min="1">
             </div>
-    
-            <div class="quantity">
-                <button class="plus-btn" type="button" name="button">
-                    <img src="/assets/images/plus.svg" alt="" />
-                </button>
-                <input type="text" name="name" value="1">
-                <button class="minus-btn" type="button" name="button">
-                    <img src="/assets/images/minus.svg" alt="" />
+            <div class="product-removal">
+                <button class="remove-product">
+                    Remove
                 </button>
             </div>
-    
-            <div class="total-price">₹349</div>
+            <div class="product-line-price">45.99</div>
         </div>
+    
+        <div class="totals">
+            <div class="totals-item">
+                <label>Subtotal</label>
+                <div class="totals-value" id="cart-subtotal">71.97</div>
+            </div>
+            <div class="totals-item">
+                <label>Tax (5%)</label>
+                <div class="totals-value" id="cart-tax">3.60</div>
+            </div>
+            <div class="totals-item">
+                <label>Shipping</label>
+                <div class="totals-value" id="cart-shipping">15.00</div>
+            </div>
+            <div class="totals-item totals-item-total">
+                <label>Grand Total</label>
+                <div class="totals-value" id="cart-total">90.57</div>
+            </div>
+        </div>
+    
+        <button class="checkout">Checkout</button>
+    
     </div>
-  
-    <!-- end item left-->
-    <!-- start item right -->
-            <div class="shopping-cart1">
-                <!-- Title -->
-                <div class="title">
-                    Shopping Bag
-                </div>
-            
-                <!-- Product #1 -->
-                <div class="item-header">
-                    <div class="buttons">
-                        <span class="delete-btn"></span>
-                        <span class="like-btn"></span>
-                    </div>
-            
-                    <div class="image">
-                        <img src="/assets/images/item-1.png" alt="" />
-                    </div>
-            
-                    <div class="description">
-                        <span>Common Projects</span>
-                        <span>Bball High</span>
-                        <span>White</span>
-                    </div>
-            
-                    <div class="quantity">
-                        <button class="plus-btn" type="button" name="button">
-                            <img src="/assets/images/plus.svg" alt="" />
-                        </button>
-                        <input type="text" name="name" value="1">
-                        <button class="minus-btn" type="button" name="button">
-                            <img src="/assets/images/minus.svg" alt="" />
-                        </button>
-                    </div>
-            
-                    <div class="total-price">₹549</div>
-                </div>
-            
-                <!-- Product #2 -->
-                <div class="item-header">
-                    <div class="buttons">
-                        <span class="delete-btn"></span>
-                        <span class="like-btn"></span>
-                    </div>
-            
-                    <div class="image">
-                        <img src="/assets/images/item-2.png" alt="" />
-                    </div>
-            
-                    <div class="description">
-                        <span>Maison Margiela</span>
-                        <span>Future Sneakers</span>
-                        <span>White</span>
-                    </div>
-            
-                    <div class="quantity">
-                        <button class="plus-btn" type="button" name="button">
-                            <img src="/assets/images/plus.svg" alt="" />
-                        </button>
-                        <input type="text" name="name" value="1">
-                        <button class="minus-btn" type="button" name="button">
-                            <img src="/assets/images/minus.svg" alt="" />
-                        </button>
-                    </div>
-            
-                    <div class="total-price">₹999</div>
-                </div>
-            
-                <!-- Product #3 -->
-                <div class="item-header">
-                    <div class="buttons">
-                        <span class="delete-btn"></span>
-                        <span class="like-btn"></span>
-                    </div>
-            
-                    <div class="image">
-                        <img src="/assets/images/item-3.png" alt="" />
-                    </div>
-            
-                    <div class="description">
-                        <span>Our Legacy</span>
-                        <span>Brushed Scarf</span>
-                        <span>Brown</span>
-                    </div>
-            
-                    <div class="quantity">
-                        <button class="plus-btn" type="button" name="button">
-                            <img src="/assets/images/plus.svg" alt="" />
-                        </button>
-                        <input type="text" name="name" value="1">
-                        <button class="minus-btn" type="button" name="button">
-                            <img src="/assets/images/minus.svg" alt="" />
-                        </button>
-                    </div>
-            
-                    <div class="total-price">₹349</div>
-                </div>
-            </div>
+</div>
     <!-- end item left-->
     <!-- start javascript file for items -->
     <script type="text/javascript">
-        $('.minus-btn').on('click', function (e) {
-            e.preventDefault();
-            var $this = $(this);
-            var $input = $this.closest('div').find('input');
-            var value = parseInt($input.val());
+        var taxRate = 0.05;
+            var shippingRate = 15.00;
+            var fadeTime = 300;
 
-            if (value > 1) {
-                value = value - 1;
-            } else {
-                value = 0;
+
+            /* Assign actions */
+            $('.product-quantity input').change(function () {
+                updateQuantity(this);
+            });
+
+            $('.product-removal button').click(function () {
+                removeItem(this);
+            });
+
+
+            /* Recalculate cart */
+            function recalculateCart() {
+                var subtotal = 0;
+
+                /* Sum up row totals */
+                $('.product').each(function () {
+                    subtotal += parseFloat($(this).children('.product-line-price').text());
+                });
+
+                /* Calculate totals */
+                var tax = subtotal * taxRate;
+                var shipping = (subtotal > 0 ? shippingRate : 0);
+                var total = subtotal + tax + shipping;
+
+                /* Update totals display */
+                $('.totals-value').fadeOut(fadeTime, function () {
+                    $('#cart-subtotal').html(subtotal.toFixed(2));
+                    $('#cart-tax').html(tax.toFixed(2));
+                    $('#cart-shipping').html(shipping.toFixed(2));
+                    $('#cart-total').html(total.toFixed(2));
+                    if (total == 0) {
+                        $('.checkout').fadeOut(fadeTime);
+                    } else {
+                        $('.checkout').fadeIn(fadeTime);
+                    }
+                    $('.totals-value').fadeIn(fadeTime);
+                });
             }
 
-            $input.val(value);
 
-        });
+            /* Update quantity */
+            function updateQuantity(quantityInput) {
+                /* Calculate line price */
+                var productRow = $(quantityInput).parent().parent();
+                var price = parseFloat(productRow.children('.product-price').text());
+                var quantity = $(quantityInput).val();
+                var linePrice = price * quantity;
 
-        $('.plus-btn').on('click', function (e) {
-            e.preventDefault();
-            var $this = $(this);
-            var $input = $this.closest('div').find('input');
-            var value = parseInt($input.val());
-
-            if (value < 100) {
-                value = value + 1;
-            } else {
-                value = 100;
+                /* Update line price display and recalc cart totals */
+                productRow.children('.product-line-price').each(function () {
+                    $(this).fadeOut(fadeTime, function () {
+                        $(this).text(linePrice.toFixed(2));
+                        recalculateCart();
+                        $(this).fadeIn(fadeTime);
+                    });
+                });
             }
 
-            $input.val(value);
-        });
 
-        $('.like-btn').on('click', function () {
-            $(this).toggleClass('is-active');
-        });
+            /* Remove item from cart */
+            function removeItem(removeButton) {
+                /* Remove row from DOM and recalc cart total */
+                var productRow = $(removeButton).parent().parent();
+                productRow.slideUp(fadeTime, function () {
+                    productRow.remove();
+                    recalculateCart();
+                });
+            }
     </script>
     <!-- end JS files for items -->
     <!-- Vendor JS Files -->

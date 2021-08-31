@@ -257,11 +257,25 @@
 
 
 /*---------------------------------------------------------------------------------------------------
+#           Java Script -----choices start
+-----------------------------------------------------------------------------------------------------*/
+
+
+// var http = require('http://127.0.0.1:5501/choices.html?');
+// // var fs= require('fs')
+
+// http.createServer(function (request, response) {
+//     response.writeHead(200, { 'Content-Type': 'text/plain' });
+//     response.end('Am I really running a server?!');
+// }).listen(8080, '127.0.0.1');
+
+// console.log('running server!');
+/*---------------------------------------------------------------------------------------------------
 #           Java Script -----New
 -----------------------------------------------------------------------------------------------------*/
 
 
-const https= require('http')
+const https= require('https')
 const fs= require('fs')
 const fileContent = fs.readFileSync('contact.html')
 
@@ -274,7 +288,7 @@ const server =http.createServer((req,res)=>{
 server.listen(80,'127.0.0.1',()=>{
     console.log("listening on port 80")
 })
-=======
+// =======
 /**
 * Template Name: Groovin - v4.3.0
 * Template URL: https://bootstrapmade.com/groovin-free-bootstrap-theme/

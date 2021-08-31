@@ -20,8 +20,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
    margin-top: inherit;
 }
-
-
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -1222,9 +1220,9 @@ Side note: I know that this style of nesting in SASS doesn't result in the most 
 }
 
 /* Apply clearfix in a few places */
-/* Apply dollar signs */
+/* Apply dollar signs at someplaces*/
 .product .product-price:before, .product .product-line-price:before, .totals-value:before {
-  content: '$';
+  content: '₹';
 }
 
 .padding_body_item
@@ -1400,7 +1398,7 @@ label {
   }
 
   .product .product-line-price:before {
-    content: 'Item Total: $';
+    content: 'Item Total: ₹';
   }
 
   .totals .totals-item label {

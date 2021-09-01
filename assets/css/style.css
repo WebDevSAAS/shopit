@@ -877,7 +877,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-login {
   font-size: 0.9rem;
   letter-spacing: 0.05rem;
-  width: 20px;
+  width: 100%; 
   padding: 0.75rem 1rem;
   border-radius: 2rem;
 }
@@ -986,12 +986,23 @@ h1, h2, h3, h4, h5, h6 {
       padding: 20px;
       }
       form {
-      width: 100%;
-      margin-top: 100px;
+      width: 120%;
+      margin: auto;
       padding: 20px 20px 20px 20px;
       border-radius: 6px;
       background: #fff;
       box-shadow: 0 0 8px #006622; 
+      }
+      .form-title{
+        text-align: center;
+      }
+      .vertical-center {
+        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
       }
       .banner {
       position: relative;
@@ -1003,13 +1014,13 @@ h1, h2, h3, h4, h5, h6 {
       text-align: center;
       }
       input, select, textarea {
-      margin-bottom: 10px;
+      margin-bottom: 11px;
       border: 1px solid #ccc;
       border-radius: 3px;
       }
       input {
       width: calc(100% - 10px);
-      padding: 5px;
+      padding: 8px;
       }
       input[type="date"] {
       padding: 4px 5px;
@@ -1025,7 +1036,8 @@ h1, h2, h3, h4, h5, h6 {
       display:inline-block;
       height:15px;
       width:15px;
-      margin-right:5px;
+      padding: 15px 0px;
+      margin:5px;
       vertical-align:text-top;
       }
       .item input:hover, .item select:hover, .item textarea:hover {
@@ -1054,7 +1066,7 @@ h1, h2, h3, h4, h5, h6 {
       width:48%;
       }
       input[type=radio], input[type=checkbox]  {
-      display: none;
+      
       }
       label.radio {
       position: relative;
@@ -1147,6 +1159,24 @@ h1, h2, h3, h4, h5, h6 {
       height: 38px;
       margin-top: 20px;
       }
+      .sig-btn{
+        padding:8px 30px;
+        margin:auto;
+        margin-top:10px;
+        border-radius: 2rem;
+        background-color: rgba(0, 0, 0, 0.75);
+        color:white;
+        border:2px solid rgb(92, 159, 36);
+        width: auto;
+      }
+      .sig-btn:hover{
+        background-color: rgb(92, 159, 36);
+        color: white;
+      }
+      .signup-image-link{
+        padding-top:30px;
+        text-align: center;
+      }
       /* pdf upload css */
      
 form button:hover{
@@ -1155,7 +1185,7 @@ form button:hover{
 }
 form button:active{
   border:2px;
-  margin-left: 20px;
+  margin-left: 0px;
 }
 
 /* ---------------------

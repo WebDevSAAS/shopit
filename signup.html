@@ -38,12 +38,12 @@
     <header id="header" class="fixed-top d-flex align-items-center">
         <div class="container d-flex align-items-center justify-content-between">
 
-            <h1 class="logo"><a href="index.html">Welcome to Shop It</a></h1>
+            <h1 class="logo"><a href="index.html">Welcome to Shop Us</a></h1>
 
             <nav id="navbar" class="navbar">
                 <ul>
             
-                    <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+                    <li><a class="nav-link scrollto" href="index.html">Home</a></li>
                     <li><a class="nav-link scrollto" href="about.html">About</a></li>
                     <li><a class="nav-link scrollto" href="choices.html">Search</a></li>
                     <li><a class="nav-link scrollto " href="item.html">Item</a></li>
@@ -66,7 +66,7 @@
                         </ul>
                     </li>
                     <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
-                    <li><a href="login.html">login/sign-up</a></li>
+                    <li><a class="nav-link scrollto active" href="login.html">login/Sign-up</a></li>
                     <li><a class="getstarted scrollto" href="index.html">Get Started</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
@@ -87,16 +87,18 @@
         <section class="signup">
             <div class="container">
                 <div class="signup-content">
-                    <div class="signup-form">
-                        <h2 class="form-title">Sign up</h2>
+                    <div class="signup-form vertical-center">
                         <form method="POST" class="register-form" id="register-form">
+                            <div>
+                                <h2 class="form-title">Sign Up</h2>
+                            </div>
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
                                 <input type="text" name="name" id="name" placeholder="Your Name" />
                             </div>
                             <div class="form-group">
                                 <label for="email"><i class="zmdi zmdi-email"></i></label>
-                                <input type="email" name="email" id="email" placeholder="Your Email" />
+                                <input type="email" name="email" id="email" placeholder="Email Address" />
                             </div>
                             <div class="form-group">
                                 <label for="pass"><i class="zmdi zmdi-lock"></i></label>
@@ -106,19 +108,20 @@
                                 <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
                                 <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password" />
                             </div>
-                            <div class="form-group">
-                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
-                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all
-                                    statements in <a href="#" class="term-service">Terms of service</a></label>
+                            <div class="form-check form-group">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    I agree all statements in <a href="#" class="term-service">Terms of service</a>
+                                </label>
                             </div>
-                            <div class="form-group form-button">
-                                <input type="submit" name="signup" id="signup" class="form-submit" value="Register" />
+                            <div class="form-group form-button" style="display: flex; justify-content: center; align-items: center;">
+                                <input type="submit" name="signup" id="signup" class="form-submit sig-btn" value="Register" />
                             </div>
                         </form>
-                    </div>
-                    <div class="signup-image">
-                        <a href="login.html" class="signup-image-link">I am already member</a>
-                        <samp></samp>
+                        <div class="signup-image">
+                            <a href="login.html" class="signup-image-link">I am already member</a>
+                            <samp></samp>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -40,12 +40,12 @@
     <header id="header" class="fixed-top d-flex align-items-center">
         <div class="container d-flex align-items-center justify-content-between">
 
-            <h1 class="logo"><a href="index.html">Welcome to Shop It</a></h1>
+            <h1 class="logo"><a href="index.html">Welcome to Shop Us</a></h1>
 
             <nav id="navbar" class="navbar">
                 <ul>
             
-                    <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+                    <li><a class="nav-link scrollto" href="index.html">Home</a></li>
                     <li><a class="nav-link scrollto" href="about.html">About</a></li>
                     <li><a class="nav-link scrollto" href="choices.html">Search</a></li>
                     <li><a class="nav-link scrollto " href="item.html">Item</a></li>
@@ -68,8 +68,8 @@
                         </ul>
                     </li>
                     <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
-                    <li><a href="login.html">login/sign-up</a></li>
-                    <li><a class="getstarted scrollto" href="index.html">Get Started</a></li>
+                    <li><a class="nav-link scrollto active" href="login.html">login/sign-up</a></li>
+                    <!-- <li><a class="getstarted scrollto" href="index.html">Get Started</a></li> -->
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
@@ -94,7 +94,8 @@
                         <div class="row">
                             <div class="col-md-9 col-lg-8 mx-auto">
                                 <h3 class="login-heading mb-4">Welcome back!</h3>
-                                <form>
+                                
+                                <form class="form-signin">
                                     <div class="form-label-group">
                                         <input type="email" id="inputEmail" class="form-control" placeholder="Email address"
                                             required autofocus>
@@ -107,19 +108,27 @@
                                         <label for="inputPassword">Password</label>
                                     </div>
     
-                                    <div class="custom-control custom-checkbox mb-3">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                        <label class="custom-control-label" for="customCheck1">Remember password</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            Remember me
+                                        </label>
                                     </div>
-                                    <button
-                                        class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2"
-                                        type="submit">Sign in</button>
+
+
+                                    <!-- <button
+                                        class="btn sig-btn btn-lg btn-block btn-login text-uppercase font-weight-bold mb-2"
+                                        type="submit">Sign in</button> -->
+
+                                    <div class="form-group form-button" style="display: flex; justify-content: center; align-items: center;">
+                                        <input type="submit" name="signup" id="signup" class="form-submit sig-btn" value="Sign In" />
+                                    </div>
                                     <div class="text-center">
                                         <a class="small" href="signup.html">Sign Up</a>
                                     <div class="text-center">
                                         <a class="small" href="#">Forgot password?</a>
                                     </div>
-                                </form>
+                                  </form>
                             </div>
                         </div>
                     </div>

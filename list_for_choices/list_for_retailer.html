@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+
+    <title>Shop Us</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- footer Section -->
+
+    <!-- Vendor CSS Files -->
+    <link href="/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+
+
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <!-- <link href="assets/css/choicesstyle.css" rel="stylesheet"> -->
+
+    <script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
+
+
+
+<!-- drop down for list of item -->
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    h2{
+        margin-top: 100px;
+        background-attachment: fixed;
+        background-color: #6ace6d;
+        padding: 2px;
+        border-radius: 5px;
+    }
+    p{
+         background-attachment: fixed;
+        background-color: #6ace6d;
+        padding: 2px;
+        border-radius: 5px;
+    }
+    .header_item{
+        padding: 5px;
+        border: 5px solid;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        
+    }
+    .dropbtn {
+        background-color: #6ace6d;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropbtn:hover,
+    .dropbtn:focus {
+        background-color: #2a682c;
+    }
+
+    #myInput {
+        box-sizing: border-box;
+        background-image: url('/assets/images/searchicon.png');
+        background-position: 14px 12px;
+        background-repeat: no-repeat;
+        font-size: 16px;
+        padding: 14px 20px 12px 45px;
+        border: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    #myInput:focus {
+        outline: 3px solid #ddd;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f6f6f6;
+        min-width: 230px;
+        overflow: auto;
+        border: 1px solid #ddd;
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown a:hover {
+        background-color: #ddd;
+    }
+    .show {
+        display: block;
+    }
+    /* CSS for Groceries */
+    .groceries{
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 300px;
+      /* height: 100px; */
+      margin: auto;
+      text-align: center;
+      font-family: arial;
+    }
+
+    .price {
+      color: grey;
+      font-size: 22px;
+    }
+
+    .groceries button {
+      border: none;
+      outline: 0;
+      padding: 12px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    .groceries button:hover {
+      opacity: 0.7;
+    }
+    /* end for Groceries */
+    /* CSS for pharma */
+    .pharma{
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 300px;
+      margin: auto;
+      text-align: center;
+      font-family: arial;
+    }
+
+    .price {
+      color: grey;
+      font-size: 22px;
+    }
+
+    .pharma button {
+      border: none;
+      outline: 0;
+      padding: 12px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    .pharma button:hover {
+      opacity: 0.7;
+    }
+    /* end for pharma */
+    /* CSS for Groceries */
+    .fashion{
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 300px;
+      margin: auto;
+      text-align: center;
+      font-family: arial;
+    }
+
+    .price {
+      color: grey;
+      font-size: 22px;
+    }
+
+    .fashion button {
+      border: none;
+      outline: 0;
+      padding: 12px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    .fashion button:hover {
+      opacity: 0.7;
+    }
+    /* end for fashion */
+    /* CSS for home */
+    .home{
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 300px;
+      margin: auto;
+      text-align: center;
+      font-family: arial;
+    }
+
+    .price {
+      color: grey;
+      font-size: 22px;
+    }
+
+    .home button {
+      border: none;
+      outline: 0;
+      padding: 12px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    .home button:hover {
+      opacity: 0.7;
+    }
+    /* end for home */
+</style>
+<!-- end drop down -->
+
+
+
+
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+
+    <header id="header" class="fixed-top d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <h1 class="logo"><a href="/index.html">Welcome To Shop Us</a></h1>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+
+                    <li><a class="nav-link scrollto active" href="/index.html">Home</a></li>
+                    <li><a class="nav-link scrollto" href="/about.html">About</a></li>
+                    <li><a class="nav-link scrollto" href="/choices.html">Search</a></li>
+                    <li><a class="nav-link scrollto " href="/item.html">Item</a></li>
+                    <li><a class="nav-link scrollto" href="/retailerregistration.html">Register</a></li>
+                    </li>
+                    <li><a class="nav-link scrollto" href="/contact.html">Contact</a></li>
+                    <li><a href="/login.html">login/sign-up</a></li>
+
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+        </div>
+    </header><!-- End Header -->
+
+
+        <!--  start-->
+    <div class ="header_item">
+        <h2>Select the item What you want to update</h2>
+        <p>Click on the button to open the dropdown menu, and use the input field to search for a specific dropdown link.</p>
+    <br>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+            <div id="myDropdown" class="dropdown-content">
+                <input type="text" placeholder="   Search.." id="myInput" onkeyup="filterFunction()">
+                <a class ="nav-link scrolto active" href="#groceries">Groceries</a>
+                <a class ="nav-link scrolto" href="#pharma">Pharma</a>
+                <a class ="nav-link scrolto" href="#fashion">Fashion</a>
+                <a class ="nav-link scrolto" href="#home">Home Chores</a>
+                <a class ="nav-link scrolto" href="#support">Electronics</a>
+                <a class ="nav-link scrolto" href="#support">Toys</a>
+                <a class ="nav-link scrolto" href="#tools">Fitness</a>
+                <a class ="nav-link scrolto" href="#base">Food</a>
+            </div>
+        </div>
+        
+
+
+    <h1>Grocery Section</h1>
+    <br><br>
+    <!-- For Groceris -->
+    <section id="groceries" class="groceries">
+        <div class="groceries_choices">
+            <img src="/assets/images/groceries.png" style="width:100%">
+            <h1>Item Discription</h1>
+            <p class="price">price</p>
+            <p>Some info about the item..</p>
+            <p><button>Update button</button></p>
+        </div>
+    </section>
+    <!-- end Groceris -->
+    <h1>Pharma Section</h1>
+    <br><br>
+    <!-- For Pharma -->
+    <section id="pharma" class ="pharma">
+        <div class="groceries_choices">
+            <img src="/assets/images/groceries.png" style="width:100%">
+            <h1>Item Discription</h1>
+            <p class="price">price</p>
+            <p>Some info about the item..</p>
+            <p><button>Update button</button></p>
+        </div>
+    </section>
+    <!-- end Pharma -->
+    <h1>Fashion Section</h1>
+    <br><br>
+    <!-- For Fashion -->
+    <section id="fashion" class ="fashion">
+        <div class="groceries_choices">
+            <img src="/assets/images/groceries.png" style="width:100%">
+            <h1>Item Discription</h1>
+            <p class="price">price</p>
+            <p>Some info about the item..</p>
+            <p><button>Update button</button></p>
+        </div>
+    </section>
+    <!-- end Fashion -->
+    <h1>Home Chores</h1>
+    <br><br>
+    <!-- For Home Chores -->
+    <section id="home" class ="home">
+        <div class="groceries_choices">
+            <img src="/assets/images/groceries.png" style="width:100%">
+            <h1>Item Discription</h1>
+            <p class="price">price</p>
+            <p>Some info about the item..</p>
+            <p><button>Update button</button></p>
+        </div>
+    </section>
+    <!-- end Home Chores -->
+        <script>
+            /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            function filterFunction() {
+                var input, filter, ul, li, a, i;
+                input = document.getElementById("myInput");
+                filter = input.value.toUpperCase();
+                div = document.getElementById("myDropdown");
+                a = div.getElementsByTagName("a");
+                for (i = 0; i < a.length; i++) {
+                    txtValue = a[i].textContent || a[i].innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        a[i].style.display = "";
+                    } else {
+                        a[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
+
+        <!-- end -->
+
+
+    <!-- end JS files for items -->
+
+    <!-- Vendor JS Files -->
+    <script src="/assets/vendor/aos/aos.js"></script>
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/assets/vendor/php-email-form/validate.js"></script>
+    <script src="/assets/vendor/purecounter/purecounter.js"></script>
+    <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="/assets/js/main.js">
+    </script>
+
+
+    <!-- Template Main JS File -->
+
+    <!-- // item start -->
+    <!-- <script> 
+        </script>  -->
+
+</body>
+
+</html>

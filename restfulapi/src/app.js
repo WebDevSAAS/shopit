@@ -60,6 +60,55 @@ app.post('/retailer', async(req, res) => {
     }
     //    res.send('hello from simple server :)')
 })
+
+// to read the data--------for customer
+
+app.get('/students' , async(req , res)=>{
+
+   try{
+       const studentData= await Student.find();
+       res.send(studentData);
+   }catch(e)
+   {
+       res.send(e);
+   }
+})
+
+
+// to read the data--------for retailer
+
+app.get('/retailer', async(req, res) => {
+
+    try {
+        const retailerData = await Retailer.find();
+        res.send(retailerData);
+    } catch (e) {
+        res.send(e);
+    }
+})
+
+// to get the data for perticular persion
+
+// app.get('/students/:name(we can place here based on what we are searching)' , (req , res)=>{
+// app.get('/students/:id' , async(req , res)=>{
+//     try{
+//         const _id = req.params.id;
+//         const studentdata=await Student.findById(_id);
+//         console.log(studentdata);
+//         if (!studentdata)
+//         {
+//             return res.status(404).send();
+//         }
+//         else
+//         {
+//             res.send(studentdata);
+//         }
+//     }catch(e){
+//         res.send(e);
+//     }
+// })
+
+
 app.listen(port,() =>{
     console.log(`connection established at ${port}`);
 })

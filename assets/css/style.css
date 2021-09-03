@@ -1,4 +1,4 @@
-/*--------------------------------------------------------------
+o/*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 1);
   transition: all 0.5s;
   z-index: 997;
   height: 80px;
@@ -87,6 +87,12 @@ h1, h2, h3, h4, h5, h6 {
 /**
 * Desktop Navigation 
 */
+.shopus-logo{
+  border-radius: 50%;
+  width:30%;
+  margin-bottom: 5%;
+}
+
 .navbar {
   padding: 0;
 }
@@ -557,7 +563,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .carousel-indicators li.active {
-  opacity: 1;
+  opacity: 0;
   background: #5c9f24;
 }
 
@@ -955,7 +961,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Fallback for IE
+p/* Fallback for IE
 -------------------------------------------------- */
 
 @media all and (-ms-high-contrast: none),
@@ -983,10 +989,11 @@ h1, h2, h3, h4, h5, h6 {
       justify-content: center;
       align-items: center;
       height: inherit;
+      margin-bottom: 7%;
       padding: 20px;
       }
       form {
-      width: 120%;
+      width: 100%;
       margin: auto;
       padding: 20px 20px 20px 20px;
       border-radius: 6px;
@@ -1201,12 +1208,12 @@ Side note: I know that this style of nesting in SASS doesn't result in the most 
 /* Global "table" column settings */
 .product-image {
   float: left;
-  width: 20%;
+  width: 15%;
 }
 
 .product-details {
   float: left;
-  width: 37%;
+  width: 35%;
 }
 
 .product-price {
@@ -1216,12 +1223,12 @@ Side note: I know that this style of nesting in SASS doesn't result in the most 
 
 .product-quantity {
   float: left;
-  width: 10%;
+  width: 12%;
 }
 
 .product-removal {
   float: left;
-  width: 9%;
+  width: 14%;
 }
 
 .product-line-price {
@@ -1358,6 +1365,7 @@ label {
   color: #fff;
   font-size: 25px;
   border-radius: 3px;
+  margin-bottom: 2%;
 }
 
 .checkout:hover {

@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 1);
   transition: all 0.5s;
   z-index: 997;
   height: 80px;
@@ -87,6 +87,12 @@ h1, h2, h3, h4, h5, h6 {
 /**
 * Desktop Navigation 
 */
+.shopus-logo{
+  border-radius: 50%;
+  width:30%;
+  margin-bottom: 5%;
+}
+
 .navbar {
   padding: 0;
 }
@@ -557,7 +563,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .carousel-indicators li.active {
-  opacity: 1;
+  opacity: 0;
   background: #5c9f24;
 }
 
@@ -986,7 +992,7 @@ h1, h2, h3, h4, h5, h6 {
       padding: 20px;
       }
       form {
-      width: 120%;
+      width: 100%;
       margin: auto;
       padding: 20px 20px 20px 20px;
       border-radius: 6px;
@@ -1210,12 +1216,12 @@ Side note: I know that this style of nesting in SASS doesn't result in the most 
 
 .product-price {
   float: left;
-  width: 12%;
+  width: 5%;
 }
 
 .product-quantity {
   float: left;
-  width: 10%;
+  width: 20%;
 }
 
 .product-removal {
@@ -1267,6 +1273,7 @@ h1 {
 
 label {
   color: #aaa;
+  text-align: center;
 }
 
 .shopping-cart {
@@ -1357,6 +1364,7 @@ label {
   color: #fff;
   font-size: 25px;
   border-radius: 3px;
+  margin-bottom: 2%;
 }
 
 .checkout:hover {

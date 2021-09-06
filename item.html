@@ -5,7 +5,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
 
-    <title>Shop It</title>
+    <title>Shop Us</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -52,7 +52,7 @@
                     <li><a class="nav-link scrollto" href="choices.html">Search</a></li>
                     <li><a class="nav-link scrollto active" href="item.html">Item</a></li>
                     <li><a class="nav-link scrollto" href="retailerregistration.html">Register</a></li>
-                    <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+                    <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="#">Drop Down 1</a></li>
                             <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
@@ -68,7 +68,7 @@
                             <li><a href="#">Drop Down 3</a></li>
                             <li><a href="#">Drop Down 4</a></li>
                         </ul>
-                    </li> -->
+                    </li>
                     <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
                     <li><a href="login.html">login/sign-up</a></li>
                     <li><a class="getstarted scrollto" href="index.html">Get Started</a></li>
@@ -82,58 +82,67 @@
 <div class ="padding_body_item">
     <h1>Shopping Cart</h1>
     
-    <div class="shopping-cart">
-    
-        <div class="column-labels">
-            <label class="product-image">Image</label>
-            <label class="product-details">Product</label>
-            <label class="product-price">Price</label>
-            <label class="product-quantity">Quantity</label>
-            <label class="product-removal">Remove</label>
-            <label class="product-line-price">Total</label>
-        </div>
-    
-        <div class="product">
-            <div class="product-image">
-                <img src="https://s.cdpn.io/3/dingo-dog-bones.jpg">
-            </div>
-            <div class="product-details">
-                <div class="product-title">Item Name</div>
-                <p class="product-description">Item Discription</p>
-            </div>
-            <div class="product-price">22.99</div>
-            <div class="product-quantity">
-                <input type="number" value="2" min="0">
-            </div>
-            <div class="product-removal">
-                <button class="remove-product">
-                    Remove
-                </button>
-            </div>
-            <div class="product-line-price">25.98</div>
-        </div>
-    
-        <div class="product">
-            <div class="product-image">
-                <img src="https://s.cdpn.io/3/large-NutroNaturalChoiceAdultLambMealandRiceDryDogFood.png">
-            </div>
-            <div class="product-details">
-                <div class="product-title">Item Name</div>
-                <p class="product-description">Item Discription</p>
-            </div>
-            <div class="product-price">45.99</div>
-            <div class="product-quantity">
-                <input type="number" value="1" min="0">
-            </div>
-            <div class="product-removal">
-                <button class="remove-product">
-                    Remove
-                </button>
-            </div>
-            <div class="product-line-price">37.99</div>
-        </div>
-    
-        <div class="totals">
+    <div class="shoppingcart table-responsive" >
+        <table class="table">
+            <thead class="thead-dark text-center">
+              <tr>
+                <th scope="col">Image</th>
+                <th scope="col">Product Name</th>
+                <th class="head-hide" scope="col">Description</th>
+                <th class="head-hide" scope="col">Price</th>
+                <th scope="col" style="width:15%;">Quantity</th>
+                <th scope="col">Remove</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr class="product item2 text-center align-content-center align-items-center">
+                <td class="product-image">
+                    <img src="https://s.cdpn.io/3/dingo-dog-bones.jpg">
+                </td>
+                <td>Item Name</td>
+                <td class="product-description"><p >Dolor labore cupidatat eiusmod quis eiusmod eiusmod esse reprehenderit tempor commodo non. Proident culpa eu ad cillum aliqua ex Lorem voluptate incididunt ex officia velit eu irure.</p></td>
+                <td class="product-price">22.99</td>
+                <td class="product-quantity">
+                    <input type="number" value="2" min="0">
+                </td>
+                <td class="product-removal"><i class="bi bi-trash-fill remove-product"></i></td>
+                <td><div class="product-line-price">25.98</div></td>
+              </tr>
+
+              <tr class="product item2 text-center align-content-center align-items-center">
+                <th class="product-image" scope="row">
+                    <img src="https://s.cdpn.io/3/large-NutroNaturalChoiceAdultLambMealandRiceDryDogFood.png">
+                </th>
+                <td>Item Name</td>
+                <td class="product-description"><p >Ad proident minim amet veniam excepteur mollit reprehenderit duis veniam dolor id.</p></td>
+                <td class="product-price">45.99</td>
+                <td class="product-quantity">
+                    <input type="number" value="1" min="0">
+                </td>
+                <td class="product-removal"><i class="bi bi-trash-fill remove-product"></i></td>
+                <td><div class="product-line-price">45.99</div></td>
+              </tr>
+
+              <tr class="product item2 text-center align-content-center align-items-center">
+                <th class="product-image" scope="row">
+                    <img src="./assets/images/item-3.png">
+                </th>
+                <td>Item Name</td>
+                <td class="product-description"><p >Nulla exercitation ea veniam esse consectetur sunt fugiat sit quis.</p></td>
+                <td class="product-price">22.99</td>
+                <td class="product-quantity">
+                    <input type="number" value="2" min="0">
+                </td>
+                <td class="product-removal"><i class="bi bi-trash-fill remove-product"></i></td>
+                <td><div class="product-line-price">25.98</div></td>
+              </tr>
+              
+            </tbody>
+          </table>
+
+          <div class="totals">
             <div class="totals-item">
                 <label>Subtotal</label>
                 <div class="totals-value" id="cart-subtotal">71.97</div>
@@ -153,10 +162,24 @@
         </div>
     
         <button class="checkout">Checkout</button>
-    
+          
     </div>
 </div>
     <!-- end item left-->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>SHOPUS</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+            
+                Designed by <a href="https://bootstrapmade.com/">SAS</a>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
     
     <!-- start javascript file for items -->
     <script type="text/javascript">
@@ -170,7 +193,7 @@
                 updateQuantity(this);
             });
 
-            $('.product-removal button').click(function () {
+            $('.product-removal i').click(function () {
                 removeItem(this);
             });
 
@@ -181,7 +204,7 @@
 
                 /* Sum up row totals */
                 $('.product').each(function () {
-                    subtotal += parseFloat($(this).children('.product-line-price').text());
+                    subtotal += parseFloat($(this).children().children('.product-line-price').text());
                 });
 
                 /* Calculate totals */
@@ -213,8 +236,10 @@
                 var quantity = $(quantityInput).val();
                 var linePrice = price * quantity;
 
+                // var who = ('.product').children('.product-line-price')
+
                 /* Update line price display and recalc cart totals */
-                productRow.children('.product-line-price').each(function () {
+                productRow.children().children('.product-line-price').each(function () {
                     $(this).fadeOut(fadeTime, function () {
                         $(this).text(linePrice.toFixed(2));
                         recalculateCart();
@@ -237,11 +262,6 @@
     <!-- end JS files for items -->
 
 
-
-
-
-
-    
     <!-- Vendor JS Files -->
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -256,6 +276,7 @@
 
 
     <!-- Template Main JS File -->
+
      
     <!-- // item start -->
     <!-- <script> 

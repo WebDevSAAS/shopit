@@ -1064,7 +1064,7 @@ p/* Fallback for IE
       }
       .week {
       display:flex;
-      justfiy-content:space-between;
+      justify-content: space-between;
       }
       .colums {
       display:flex;
@@ -1211,7 +1211,7 @@ Side note: I know that this style of nesting in SASS doesn't result in the most 
 /* Global "table" column settings */
 .product-image {
   float: left;
-  width: 15%;
+  width: 100%;
 }
 
 .product-details {
@@ -1220,24 +1220,25 @@ Side note: I know that this style of nesting in SASS doesn't result in the most 
 }
 
 .product-price {
-  float: left;
-  width: 12%;
+  /* float: left;
+  width: 100%; */
+  text-align: center;
 }
 
 .product-quantity {
-  float: left;
-  width: 12%;
+  /* float: left; */
+  /* width: 12%; */
 }
 
 .product-removal {
-  float: left;
-  width: 14%;
+  /* float: left; */
+  width: 10%;
 }
 
 .product-line-price {
-  float: left;
-  width: 12%;
-  text-align: right;
+  /* float: left;
+  width: 100%; */
+  text-align: center;
 }
 
 /* This is used as the traditional .clearfix class */
@@ -1321,12 +1322,12 @@ label {
   margin: 5px 20px 5px 0;
   line-height: 1.4em;
 }
-.product .product-quantity input {
+/* .product .product-quantity input {
   width: 40px;
-}
+} */
 .product .remove-product {
   border: 0;
-  padding: 4px 8px;
+  padding: 4px;
   background-color: #c66;
   color: #fff;
   font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
@@ -1335,6 +1336,7 @@ label {
 }
 .product .remove-product:hover {
   background-color: #a44;
+  cursor: pointer;
 }
 
 /* Totals section */
@@ -1344,12 +1346,12 @@ label {
   width: 100%;
   margin-bottom: 10px;
 }
-.totals .totals-item label {
-  float: left;
+ .totals .totals-item label {
+  float: left; 
   clear: both;
   width: 79%;
   text-align: right;
-}
+} 
 .totals .totals-item .totals-value {
   float: right;
   width: 21%;
@@ -1387,23 +1389,29 @@ label {
     display: none;
   }
 
-  .product-image {
-    float: right;
-    width: auto;
-  }
-  .product-image img {
-    margin: 0 0 10px 10px;
+  .head-hide{
+    display: none;
   }
 
-  .product-details {
-    float: none;
-    margin-bottom: 10px;
+  .product-image {
     width: auto;
+  }
+
+  .product-image img {
+    margin: 0 0 0px 0px;
+  }
+
+  .product-description {
+    /* float: none;
+    margin-bottom: 10px;
+    width: auto; */
+    display: none;
   }
 
   .product-price {
-    clear: both;
-    width: 70px;
+    /* clear: both;
+    width: 70px; */
+    display: none;
   }
 
   .product-quantity {
@@ -1413,12 +1421,13 @@ label {
     margin-left: 20px;
   }
 
-  .product-quantity:before {
+  /* .product-quantity:before {
     content: 'x';
-  }
+  } */
 
   .product-removal {
     width: auto;
+    align-items: center;
   }
 
   .product-line-price {
@@ -1444,10 +1453,10 @@ label {
   }
 
   .totals .totals-item label {
-    width: 60%;
+    width: 79%;
   }
   .totals .totals-item .totals-value {
-    width: 40%;
+    width: 100%;
   }
 }
 
@@ -1470,4 +1479,9 @@ label {
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+/* ITEM2 CSS || PS: Please Don't Mess. It's CSS is only for item2 */
+.item2 input{
+  width: 70%;
 }

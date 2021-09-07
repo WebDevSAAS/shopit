@@ -988,7 +988,7 @@ p/* Fallback for IE
       padding: 5px;
       }
       .testbox {
-      display: flex;
+      /* display: flex; */
       justify-content: center;
       align-items: center;
       height: inherit;
@@ -1001,7 +1001,8 @@ p/* Fallback for IE
       padding: 20px 20px 20px 20px;
       border-radius: 6px;
       background: #fff;
-      box-shadow: 0 0 8px #006622; 
+      box-shadow: 0 0 8px #006622;
+       
       }
       .form-title{
         text-align: center;
@@ -1340,26 +1341,36 @@ label {
 }
 
 /* Totals section */
-.totals .totals-item {
+ /* .totals .totals-item {
   float: right;
   clear: both;
   width: 100%;
   margin-bottom: 10px;
 }
- .totals .totals-item label {
+  .totals .totals-item label {
   float: left; 
   clear: both;
   width: 79%;
   text-align: right;
-} 
+}  
 .totals .totals-item .totals-value {
   float: right;
   width: 21%;
   text-align: right;
+} */
+.totals{
+  width: 25%;
+  float: right;
 }
+
+.totals .totals-value{
+  /* margin-left: 1%; */
+  float: right;
+}
+
 .totals .totals-item-total {
   font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
-}
+} 
 
 .checkout {
   float: right;
@@ -1449,7 +1460,7 @@ label {
   }
 
   .product .product-line-price:before {
-    content: 'Item Total: ₹';
+    content: '₹';
   }
 
   .totals .totals-item label {

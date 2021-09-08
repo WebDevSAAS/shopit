@@ -983,6 +983,10 @@ p/* Fallback for IE
 #retailer_registration
 ------------------------------------ */
 
+      .signup-container{
+        height: 73vh;
+      }
+
       textarea {
       width: calc(100% - 12px);
       padding: 5px;
@@ -1445,6 +1449,10 @@ label {
     float: right;
     width: 70px;
   }
+
+  .totals{
+    width: 100%;
+  }
 }
 /* Make more adjustments for phone */
 @media screen and (max-width: 350px) {
@@ -1463,12 +1471,7 @@ label {
     content: '₹';
   }
 
-  .totals .totals-item label {
-    width: 79%;
-  }
-  .totals .totals-item .totals-value {
-    width: 100%;
-  }
+  
 }
 
 /* ----------------------------------------------------------------------------------------------------------

@@ -1567,11 +1567,14 @@ label {
   font-size: 15px;
   line-height: 24px;
   color: #737373;
-  left: 0;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: -20px;
 }
 .site-footer hr {
   border-top-color: #bbb;
   opacity: 0.5;
+
 }
 .site-footer hr.small {
   margin: 20px 0;

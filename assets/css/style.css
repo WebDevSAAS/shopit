@@ -964,7 +964,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-p/* Fallback for IE
+/* Fallback for IE
 -------------------------------------------------- */
 
 @media all and (-ms-high-contrast: none),
@@ -982,7 +982,9 @@ p/* Fallback for IE
 /* ---------------------------------
 #retailer_registration
 ------------------------------------ */
-
+      .signup-container{
+        height: 73vh;
+      }
       textarea {
       width: calc(100% - 12px);
       padding: 5px;
@@ -1075,9 +1077,6 @@ p/* Fallback for IE
       }
       .colums div {
       width:48%;
-      }
-      input[type=radio], input[type=checkbox]  {
-      
       }
       label.radio {
       position: relative;
@@ -1226,11 +1225,6 @@ Side note: I know that this style of nesting in SASS doesn't result in the most 
   text-align: center;
 }
 
-.product-quantity {
-  /* float: left; */
-  /* width: 12%; */
-}
-
 .product-removal {
   /* float: left; */
   width: 10%;
@@ -1312,6 +1306,9 @@ label {
 .product .product-image {
   text-align: center;
 }
+.product-img-name{
+  visibility: hidden;
+}
 .product .product-image img {
   width: 100px;
 }
@@ -1323,9 +1320,6 @@ label {
   margin: 5px 20px 5px 0;
   line-height: 1.4em;
 }
-/* .product .product-quantity input {
-  width: 40px;
-} */
 .product .remove-product {
   border: 0;
   padding: 4px;
@@ -1340,24 +1334,6 @@ label {
   cursor: pointer;
 }
 
-/* Totals section */
- /* .totals .totals-item {
-  float: right;
-  clear: both;
-  width: 100%;
-  margin-bottom: 10px;
-}
-  .totals .totals-item label {
-  float: left; 
-  clear: both;
-  width: 79%;
-  text-align: right;
-}  
-.totals .totals-item .totals-value {
-  float: right;
-  width: 21%;
-  text-align: right;
-} */
 .totals{
   width: 25%;
   float: right;
@@ -1395,7 +1371,9 @@ label {
     padding-top: 20px;
     border-top: 1px solid #eee;
   }
-
+  .product-img-name{
+    visibility: visible;
+  }
   .column-labels {
     display: none;
   }
@@ -1405,11 +1383,15 @@ label {
   }
 
   .product-image {
-    width: auto;
+    width: 70px;
   }
 
   .product-image img {
     margin: 0 0 0px 0px;
+  }
+
+  .product-name{
+    display: none;
   }
 
   .product-description {
@@ -1445,6 +1427,10 @@ label {
     float: right;
     width: 70px;
   }
+
+  .totals{
+    width: 100%;
+  }
 }
 /* Make more adjustments for phone */
 @media screen and (max-width: 350px) {
@@ -1462,13 +1448,7 @@ label {
   .product .product-line-price:before {
     content: '₹';
   }
-
-  .totals .totals-item label {
-    width: 79%;
-  }
-  .totals .totals-item .totals-value {
-    width: 100%;
-  }
+ 
 }
 
 /* ----------------------------------------------------------------------------------------------------------
@@ -1495,4 +1475,172 @@ label {
 /* ITEM2 CSS || PS: Please Don't Mess. It's CSS is only for item2 */
 .item2 input{
   width: 70%;
+}
+
+/* FOOTER */
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
 }

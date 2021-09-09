@@ -5,7 +5,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
 
-    <title>Shop It</title>
+    <title>Shop Us</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -82,81 +82,180 @@
 <div class ="padding_body_item">
     <h1>Shopping Cart</h1>
     
-    <div class="shopping-cart">
-    
-        <div class="column-labels">
-            <label class="product-image">Image</label>
-            <label class="product-details">Product</label>
-            <label class="product-price">Price</label>
-            <label class="product-quantity">Quantity</label>
-            <label class="product-removal">Remove</label>
-            <label class="product-line-price">Total</label>
-        </div>
-    
-        <div class="product">
-            <div class="product-image">
-                <img src="https://s.cdpn.io/3/dingo-dog-bones.jpg">
-            </div>
-            <div class="product-details">
-                <div class="product-title">Item Name</div>
-                <p class="product-description">Item Discription</p>
-            </div>
-            <div class="product-price">22.99</div>
-            <div class="product-quantity">
-                <input type="number" value="2" min="0">
-            </div>
-            <div class="product-removal">
-                <button class="remove-product">
-                    Remove
-                </button>
-            </div>
-            <div class="product-line-price">25.98</div>
-        </div>
-    
-        <div class="product">
-            <div class="product-image">
-                <img src="https://s.cdpn.io/3/large-NutroNaturalChoiceAdultLambMealandRiceDryDogFood.png">
-            </div>
-            <div class="product-details">
-                <div class="product-title">Item Name</div>
-                <p class="product-description">Item Discription</p>
-            </div>
-            <div class="product-price">45.99</div>
-            <div class="product-quantity">
-                <input type="number" value="1" min="0">
-            </div>
-            <div class="product-removal">
-                <button class="remove-product">
-                    Remove
-                </button>
-            </div>
-            <div class="product-line-price">37.99</div>
-        </div>
-    
-        <div class="totals">
+    <div class="shoppingcart table-responsive" >
+        <table class="table">
+            <thead class="thead-dark text-center">
+              <tr>
+                <th scope="col">Image</th>
+                <th class="head-hide" scope="col">Product</th>
+                <th class="head-hide" scope="col">Description</th>
+                <th class="head-hide" scope="col">Price</th>
+                <th scope="col" style="width:15%;">Quantity</th>
+                <th scope="col">Remove</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr class="product item2 text-center align-content-center align-items-center">
+                <td class="product-image">
+                    <img src="https://s.cdpn.io/3/dingo-dog-bones.jpg">
+                    <div class="product-img-name">
+                        Dog Bones
+                    </div>
+                </td>
+                <td class="product-name">Item Name</td>
+                <td class="product-description"><p >Dolor labore cupidatat eiusmod quis eiusmod eiusmod esse reprehenderit tempor commodo non. Proident culpa eu ad cillum aliqua ex Lorem voluptate incididunt ex officia velit eu irure.</p></td>
+                <td class="product-price">22.99</td>
+                <td class="product-quantity">
+                    <input type="number" value="2" min="0">
+                </td>
+                <td class="product-removal"><i class="bi bi-trash-fill remove-product"></i></td>
+                <td><div class="product-line-price">25.98</div></td>
+              </tr>
+
+              <tr class="product item2 text-center align-content-center align-items-center">
+                <td class="product-image" scope="row">
+                    <img class="product-image" src="https://s.cdpn.io/3/large-NutroNaturalChoiceAdultLambMealandRiceDryDogFood.png">
+                    <div class="product-img-name">
+                        Item Name
+                    </div>
+                </td>
+                <td class="product-name">Item Name</td>
+                <td class="product-description"><p >Ad proident minim amet veniam excepteur mollit reprehenderit duis veniam dolor id.</p></td>
+                <td class="product-price">45.99</td>
+                <td class="product-quantity">
+                    <input type="number" value="1" min="0">
+                </td>
+                <td class="product-removal"><i class="bi bi-trash-fill remove-product"></i></td>
+                <td><div class="product-line-price">45.99</div></td>
+              </tr>
+
+              <tr class="product item2 text-center align-content-center align-items-center">
+                <td class="product-image" scope="row">
+                    <img src="./assets/images/item-3.png">
+                    <div class="product-img-name">
+                        Item Name
+                    </div>
+                </td>
+                <td class="product-name">Item Name</td>
+                <td class="product-description"><p >Nulla exercitation ea veniam esse consectetur sunt fugiat sit quis.</p></td>
+                <td class="product-price">22.99</td>
+                <td class="product-quantity">
+                    <input type="number" value="2" min="0">
+                </td>
+                <td class="product-removal"><i class="bi bi-trash-fill remove-product"></i></td>
+                <td><div class="product-line-price">25.98</div></td>
+              </tr>
+              
+            </tbody>
+          </table>
+
+          <!-- <div class="totals">
             <div class="totals-item">
                 <label>Subtotal</label>
                 <div class="totals-value" id="cart-subtotal">71.97</div>
-            </div>
+            </div><br>
             <div class="totals-item">
                 <label>Tax (5%)</label>
                 <div class="totals-value" id="cart-tax">3.60</div>
-            </div>
+            </div><br>
             <div class="totals-item">
                 <label>Shipping</label>
                 <div class="totals-value" id="cart-shipping">15.00</div>
-            </div>
+            </div><br>
             <div class="totals-item totals-item-total">
                 <label>Grand Total</label>
                 <div class="totals-value" id="cart-total">90.57</div>
-            </div>
+            </div><br>
+            <button class="checkout">Checkout</button>
+        </div> -->
+    
+        <!-- <button class="checkout">Checkout</button> -->
+        <div class="totals">
+            <table class="table">
+                
+                <tbody>
+                <tr>
+                    <th class="totals-item border-0" scope="row">Subtotal</th>
+                    <td class="totals-value border-0" id="cart-subtotal" >71.97</td>
+                </tr>
+                <tr>
+                    <th class="totals-item border-0" scope="row">Tax (5%)</th>
+                    <td class="totals-value border-0" id="cart-tax">3.60</td>
+                </tr>
+                <tr>
+                    <th class="totals-item border-0" scope="row">Shipping</th>
+                    <td class="totals-value border-0" id="cart-shipping">15.00</td>
+                </tr>
+                <tr>
+                    <th class="totals-item border-0" scope="row">Grand Total</th>
+                    <td class="totals-value border-0" id="cart-total">90.57</td>
+                </tr>
+                </tbody>
+            </table>
+            <button class="checkout">Checkout</button>
         </div>
-    
-        <button class="checkout">Checkout</button>
-    
+          
     </div>
 </div>
     <!-- end item left-->
+
+    <!-- ======= Footer ======= -->
+    <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6>About</h6>
+              <p class="text-justify">Shop Us is an e-commerce Startup that is dedicated to achieving excellence in <br> online marketing, and our vision is to help promote small buisnesses and to be <br>the most loved shopping platform in India. Here, you can choose from a wide <br>range of options in every category, exclusively handpicked to help you find the <br>best quality available at the lowest prices.</p>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Categories</h6>
+              <ul class="footer-links">
+                <li><a href="">Groceries</a></li>
+                <li><a href="">Food</a></li>
+                <li><a href="">Pharma</a></li>
+                <li><a href="">Fashion</a></li>
+                <li><a href="">Home Chores</a></li>
+                <li><a href="">Electronics</a></li>
+                <li><a href="">Toys</a></li>
+                <li><a href="">Fitness</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html">Sign-Up/Sign-In</a></li>
+                <li><a href="category.html">Categories</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+           <a href="#">Shop Us</a>.
+              </p>
+            </div>
+  
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="bi bi-facebook"></i></a></li>
+                <li><a class="twitter" href="#"><i class="bi bi-twitter"></i></a></li>
+                <li><a class="dribbble" href="#"><i class="bi bi-instagram"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="bi bi-linkedin"></i></a></li>   
+              </ul>
+            </div>
+          </div>
+        </div>
+  </footer>
+    <!-- End Footer -->
     
     <!-- start javascript file for items -->
     <script type="text/javascript">
@@ -170,7 +269,7 @@
                 updateQuantity(this);
             });
 
-            $('.product-removal button').click(function () {
+            $('.product-removal i').click(function () {
                 removeItem(this);
             });
 
@@ -181,7 +280,7 @@
 
                 /* Sum up row totals */
                 $('.product').each(function () {
-                    subtotal += parseFloat($(this).children('.product-line-price').text());
+                    subtotal += parseFloat($(this).children().children('.product-line-price').text());
                 });
 
                 /* Calculate totals */
@@ -213,8 +312,10 @@
                 var quantity = $(quantityInput).val();
                 var linePrice = price * quantity;
 
+                // var who = ('.product').children('.product-line-price')
+
                 /* Update line price display and recalc cart totals */
-                productRow.children('.product-line-price').each(function () {
+                productRow.children().children('.product-line-price').each(function () {
                     $(this).fadeOut(fadeTime, function () {
                         $(this).text(linePrice.toFixed(2));
                         recalculateCart();
@@ -237,11 +338,6 @@
     <!-- end JS files for items -->
 
 
-
-
-
-
-    
     <!-- Vendor JS Files -->
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -256,6 +352,7 @@
 
 
     <!-- Template Main JS File -->
+
      
     <!-- // item start -->
     <!-- <script> 

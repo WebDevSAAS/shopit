@@ -4,6 +4,7 @@ o/*--------------------------------------------------------------
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+  /* width: 100%; */
 }
 
 a {
@@ -468,6 +469,7 @@ h6 {
   height: 100vh;
   background-color: rgba(17, 17, 17, 0.8);
   overflow: hidden;
+  /* margin-right: -10px; */
   padding: 0;
 }
 
@@ -497,6 +499,11 @@ h6 {
   align-items: center;
   position: absolute;
   bottom: 0;
+  width: 100%;
+  /* margin-right: -10px; */
+   /* margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: -20px; */
   top: 0;
   left: 0;
   right: 0;
@@ -504,6 +511,7 @@ h6 {
 
 #hero .carousel-content {
   text-align: center;
+  /* margin-right: -100px; */
 }
 
 #hero h2 {
@@ -1563,13 +1571,14 @@ label {
 /* FOOTER */
 .site-footer {
   background-color: #26272b;
-  padding: 45px 0 20px;
+  padding: 45px 20px 20px;
+
   font-size: 15px;
   line-height: 24px;
   color: #737373;
-  margin-left: -20px;
+  /* margin-left: -20px;
   margin-right: -20px;
-  margin-bottom: -20px;
+  margin-bottom: -20px; */
 }
 .site-footer hr {
   border-top-color: #bbb;

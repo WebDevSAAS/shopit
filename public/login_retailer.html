@@ -9,7 +9,9 @@
     <meta content="" name="description">
     <meta content="" name="keywords">
 
-
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.png" rel="icon">
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link
@@ -17,7 +19,6 @@
         rel="stylesheet">
 
     <!-- footer Section -->
-
 
     <!-- Vendor CSS Files -->
     <link href="../assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -32,6 +33,7 @@
 
 </head>
 
+
 <body>
 
     <!-- ======= Header ======= -->
@@ -42,14 +44,6 @@
 
             <nav id="navbar" class="navbar">
                 <ul>
-
-            
-                    <li><a class="nav-link scrollto" href="./index.html">Home</a></li>
-                    <li><a class="nav-link scrollto" href="./about.html">About</a></li>
-                    <li><a class="nav-link scrollto" href="./choices.html">Search</a></li>
-                    <li><a class="nav-link scrollto " href="./item.html">Cart</a></li>
-                    <li><a class="nav-link scrollto" href="./retailerregistration.html">Register</a></li>
-
 
                     <li><a class="nav-link scrollto" href="../index.html">Home</a></li>
                     <li><a class="nav-link scrollto" href="about.html">About</a></li>
@@ -73,9 +67,9 @@
                             <li><a href="#">Drop Down 4</a></li>
                         </ul>
                     </li> -->
-
                     <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
-                    <li><a class="nav-link scrollto active" href="login.html">login/Sign-up</a></li>
+                    <li><a class="nav-link scrollto active" href="login.html">login/sign-up</a></li>
+                    <!-- <li><a class="getstarted scrollto" href="index.html">Get Started</a></li> -->
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
@@ -89,75 +83,64 @@
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
 
-    <!-- content to write here -->
-    <!-- Sign up form -->
-    <div class=signuphfix>
-        <section class="signup">
-            <div class="signup-container">
-                <div class="signup-content">
-                    <div class="signup-form vertical-center">
-                        <form method="POST" class="register-form" id="register-form">
-                            <div>
-                                <h2 class="form-title">Sign Up</h2>
-                            </div>
-                            <div class="form-group">
-                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="name" id="name" placeholder="Your Name" />
-                                <div class="sign--name hidden"
-                                    style="color: red; font-size: 0.6rem; font-weight: lighter;">
-                                    <p class="warn-msg">Field required*</p>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="email"><i class="zmdi zmdi-email"></i></label>
-                                <input type="email" name="email" id="email" placeholder="Email Address" />
-                                <div class="sign--email hidden"
-                                    style="color: red; font-size: 0.6rem; font-weight: lighter;">
-                                    <p class="warn-msg">Field required*</p>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="password" name="pass" id="pass" placeholder="Password" />
-                                <div class="sign--password hidden"
-                                    style="color: red; font-size: 0.6rem; font-weight: lighter;">
-                                    <p class="warn-msg">Field required*</p>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
-                                <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password" />
-                                <div class="sign--repassword hidden"
-                                    style="color: red; font-size: 0.6rem; font-weight: lighter;">
-                                    <p class="warn-msg">Field required*</p>
-                                </div>
-                            </div>
-                            <div class="form-check form-group">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"
-                                    required='required'>
-                                <label class="form-check-label" for="defaultCheck1">
-                                    I agree all statements in <a href="#" class="term-service">Terms of service</a>
-                                </label>
-                            </div>
-                            <div class="form-group form-button"
-                                style="display: flex; justify-content: center; align-items: center;">
-                                <!-- <input type="submit" name="signup" id="signup" class="form-submit sig-btn" value="Register" /> -->
+    <!-- login Section -->
+    <div class="container-fluid">
+        <div class="row no-gutter">
+            <!-- <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div> -->
+            <div class="col-md-8 col-lg-6">
+                <!-- <div class ="row"><img src="./assets/images/hero image.jfif"></div> -->
+                <div class="login d-flex align-items-center py-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9 col-lg-8 mx-auto">
+                                <h3 class="login-heading mb-4">Welcome back!</h3>
 
-                                <a href="#" class="form-submit sig-btn" id="signup">Register</a>
+                                <form class="form-signin">
+                                    <div class="form-label-group">
+                                        <input type="email" id="inputEmail" class="form-control"
+                                            placeholder="Email address" required autofocus>
+                                        <label for="inputEmail">Email address</label>
+                                    </div>
 
+                                    <div class="form-label-group">
+                                        <input type="password" id="inputPassword" class="form-control"
+                                            placeholder="Password" required>
+                                        <label for="inputPassword">Password</label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            Remember me
+                                        </label>
+                                    </div>
+
+
+                                    <!-- <button
+                                        class="btn sig-btn btn-lg btn-block btn-login text-uppercase font-weight-bold mb-2"
+                                        type="submit">Sign in</button> -->
+
+                                    <div class="form-group form-button"
+                                        style="display: flex; justify-content: center; align-items: center;">
+                                        <!-- <input type="submit" name="signup" id="signup" class="form-submit sig-btn" onclick="openWin()" value="Sign In" /> -->
+                                        <a href="./" class="form-submit sig-btn"
+                                            id="signup">Sign In</a>
+                                    </div>
+                                    <div class="text-center">
+                                        <a class="small" href="./retailerregistration.html">Sign Up</a>
+                                        <div class="text-center">
+                                            <a class="small" href="#">Forgot password?</a>
+                                        </div>
+                                </form>
                             </div>
-                        </form>
-                        <div class="signup-image">
-                            <a href="login.html" class="signup-image-link">I am already member</a>
-                            <samp></samp>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </div>
 
-    <!-- end content -->
+    <!-- end login section -->
 
     <!-- ======= Footer ======= -->
     <footer class="site-footer">
@@ -228,10 +211,9 @@
     <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
 
-
-
     <!-- Template Main JS File -->
     <script src="../assets/js/main.js"></script>
+
 </body>
 
 </html>

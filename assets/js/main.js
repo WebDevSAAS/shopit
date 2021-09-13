@@ -579,38 +579,40 @@ function addClass(divInput, divError) {
   alright = 1;
 }
 
-signBtn.addEventListener("click", function () {
-  if (nameValid.value === "") {
-    removeClass(nameValid, nameEmp);
-  } else {
-    addClass(nameValid, nameEmp);
-  }
-  if (emailValid.value === "") {
-    removeClass(emailValid, emailEmp);
-  } else {
-    addClass(emailValid, emailEmp);
-  }
-  if (pswdValid.value === "") {
-    removeClass(pswdValid, paswdEmp);
-    paswdEmp.textContent = "Field required*";
-  } else {
-    addClass(pswdValid, paswdEmp);
-  }
-  if (re_pswdValid.value === "") {
-    repaswdEmp.textContent = "Field required*";
-    removeClass(re_pswdValid, repaswdEmp);
-  } else if (pswdValid.value !== re_pswdValid.value) {
-    repaswdEmp.textContent = "Password and Confirm Password mismatched";
-    paswdEmp.textContent = "Password and Confirm Password mismatched";
-    removeClass(pswdValid, paswdEmp);
-    removeClass(re_pswdValid, repaswdEmp);
-  } else {
-    addClass(re_pswdValid, repaswdEmp);
-  }
-  if (alright) {
-    signBtn.href = "./retailerregistration.html";
-  }
-});
+if (signBtn) {
+  signBtn.addEventListener("click", function () {
+    if (nameValid.value === "") {
+      removeClass(nameValid, nameEmp);
+    } else {
+      addClass(nameValid, nameEmp);
+    }
+    if (emailValid.value === "") {
+      removeClass(emailValid, emailEmp);
+    } else {
+      addClass(emailValid, emailEmp);
+    }
+    if (pswdValid.value === "") {
+      removeClass(pswdValid, paswdEmp);
+      paswdEmp.textContent = "Field required*";
+    } else {
+      addClass(pswdValid, paswdEmp);
+    }
+    if (re_pswdValid.value === "") {
+      repaswdEmp.textContent = "Field required*";
+      removeClass(re_pswdValid, repaswdEmp);
+    } else if (pswdValid.value !== re_pswdValid.value) {
+      repaswdEmp.textContent = "Password and Confirm Password mismatched";
+      paswdEmp.textContent = "Password and Confirm Password mismatched";
+      removeClass(pswdValid, paswdEmp);
+      removeClass(re_pswdValid, repaswdEmp);
+    } else {
+      addClass(re_pswdValid, repaswdEmp);
+    }
+    if (alright) {
+      signBtn.href = "./retailerregistration.html";
+    }
+  });
+}
 
 // Choices search implementation
 const searchInput = document.querySelector(".search-field");
@@ -619,25 +621,29 @@ const select = document.querySelectorAll(".search-choice");
 const searchBtn = document.querySelector(".search-btn");
 
 //Search on SEARCH BUTTON
-searchBtn.addEventListener("click", function () {
-  const search = searchInput.value.toUpperCase();
-  for (let i = 0; i < select.length; i++) {
-    if (!select[i].textContent.includes(search)) {
-      divCategory[i].classList.add("hidden");
-    } else {
-      divCategory[i].classList.remove("hidden");
+if (searchBtn) {
+  searchBtn.addEventListener("click", function () {
+    const search = searchInput.value.toUpperCase();
+    for (let i = 0; i < select.length; i++) {
+      if (!select[i].textContent.includes(search)) {
+        divCategory[i].classList.add("hidden");
+      } else {
+        divCategory[i].classList.remove("hidden");
+      }
     }
-  }
-});
+  });
+}
 
 //Search on KEY INPUT
-searchInput.addEventListener("keyup", function () {
-  const search = searchInput.value.toUpperCase();
-  for (let i = 0; i < select.length; i++) {
-    if (!select[i].textContent.includes(search)) {
-      divCategory[i].classList.add("hidden");
-    } else {
-      divCategory[i].classList.remove("hidden");
+if (searchInput) {
+  searchInput.addEventListener("keyup", function () {
+    const search = searchInput.value.toUpperCase();
+    for (let i = 0; i < select.length; i++) {
+      if (!select[i].textContent.includes(search)) {
+        divCategory[i].classList.add("hidden");
+      } else {
+        divCategory[i].classList.remove("hidden");
+      }
     }
-  }
-});
+  });
+}

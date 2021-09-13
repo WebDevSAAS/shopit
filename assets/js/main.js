@@ -611,3 +611,33 @@ signBtn.addEventListener("click", function () {
     signBtn.href = "./retailerregistration.html";
   }
 });
+
+// Choices search implementation
+const searchInput = document.querySelector(".search-field");
+const divCategory = document.querySelectorAll(".div-search");
+const select = document.querySelectorAll(".search-choice");
+const searchBtn = document.querySelector(".search-btn");
+
+//Search on SEARCH BUTTON
+searchBtn.addEventListener("click", function () {
+  const search = searchInput.value.toUpperCase();
+  for (let i = 0; i < select.length; i++) {
+    if (!select[i].textContent.includes(search)) {
+      divCategory[i].classList.add("hidden");
+    } else {
+      divCategory[i].classList.remove("hidden");
+    }
+  }
+});
+
+//Search on KEY INPUT
+searchInput.addEventListener("keyup", function () {
+  const search = searchInput.value.toUpperCase();
+  for (let i = 0; i < select.length; i++) {
+    if (!select[i].textContent.includes(search)) {
+      divCategory[i].classList.add("hidden");
+    } else {
+      divCategory[i].classList.remove("hidden");
+    }
+  }
+});
